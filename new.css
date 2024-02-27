@@ -1,0 +1,21 @@
+.cell{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;;
+    border: 2px solid;
+    flex-wrap: wrap;
+}
+#container{
+text-align: center;
+font-family: ermenent Marker,cursive;
+}
+.game-container{
+    line-height: 7vh;
+  
+    text-align: center;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 131px;
+}

@@ -1,0 +1,447 @@
+* {
+  margin: 1px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+#dropDown{
+  z-index: 1;
+    position:absolute;
+    background-color: #f9f9f9;
+    align-items: center;
+    text-align: center;
+    display: none;
+    width: 300px;
+    background-color:rgb(230, 221, 238);
+    height: 32vh;
+    margin: 1px;
+    transition: dropDown 1s ease-in-out;
+    box-shadow: 0 0 10px black;
+}
+#dropDown a{  
+padding:-10px;
+margin:20px;
+display:inline-block;
+position: relative;
+}
+.images input{
+  display: none;
+}
+.drop:hover #dropDown{
+  display: block;
+}
+
+body {
+  background-image: url(./blu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: purple;
+  justify-content: center;
+ 
+  
+}
+.menu-icon .llist{
+  display: none;
+}
+.img-container{
+ position: relative;
+  width: 63%;
+  overflow: hidden;
+}
+.images{
+ display: flex;
+  width: 100%;
+}
+.cccc{
+ 
+  justify-content: center;
+  display: flex;
+  
+}
+.images img{
+  width: 100%;
+  height: 400px;
+  transition: 0.15s ease;
+
+}
+.img-container .dots{
+ display: flex;
+ justify-content: center;
+margin: 5px;
+}
+
+.dots label{
+  border: 1px solid;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+margin: 6px;
+color: black;
+background-color: white;  
+}
+
+.dots label:hover{
+  background-color: black;
+  color: white;
+}
+
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+
+#img2:checked ~ .m1 {
+  margin-left: -100%;
+}
+
+#img3:checked ~  .m1 {
+  margin-left: -200%;
+}
+
+#img4:checked ~.m1{
+  margin-left: -300%;
+}
+#img5:checked ~.m1{
+  margin-left:-400% ;
+}
+.menu-icon img {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+.navBar {
+  display: flex;
+  background-color:rgb(230, 221, 238);
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 45px 0 47px ;
+  
+  font-weight:500 ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.navBar h2 {
+  font-size: x-large;
+  border-right: 2px solid;
+  padding: 20px;
+}
+.navBar .list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+.list li a {
+  margin: 40px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s ease-in-out, font-size 0.3s ease-in-out; 
+}
+
+.list li a:hover {
+  border-bottom: 1px solid;
+  font-size: larger;
+}
+
+
+.download button {
+  border: none;
+  width: 169px;
+  height: 5vh;
+  background-color: skyblue;
+  border-radius: 30px;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  justify-content: center;
+  text-align: center;
+}
+.download button #dd {
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.download img {
+  width: 23px;
+  display: none;
+
+  margin-top: 4px;
+  align-items: center;
+  margin-left: 22px;
+}
+.download button:hover img {
+  display: inline-block;
+}
+.download button:hover #dd {
+  position: relative;
+  bottom: 8px;
+}
+.download button:hover {
+  border-radius: 30px;
+  background-color: blueviolet;
+  cursor: pointer;
+  width: 200px;
+}
+.content-container {
+  margin: 120px 120px;
+  justify-content: space-around;
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  flex-direction: row;
+ 
+}
+.content-container .text-content h1 {
+  margin: 1px 0px;
+}
+.content-container .text-content h4 {
+  margin: -10px 0px;
+}
+.content-container .myImg img{
+  width: 200px;
+  height: 39vh;
+  background:none;
+  outline: none;
+  border: none;  border-radius:0px 120px 120px 0px;
+  transition: 0.2s ease-in-out;
+  
+}
+.content-container .myImg img:hover{
+  transform: scale(1.1);
+}
+.text-content .myUl{
+  position: relative;
+  left: -15px;
+}
+.content-container .text-content button{
+  margin: 30px 0;
+  border: none;
+  width: 100px;
+  height: 5vh;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: cadetblue;
+}
+.content-container .text-content button:hover{
+  width: 150px;
+  background-color: blueviolet;
+}
+.content-container .text-content button img{
+  width: 10px;
+  margin-left: 10px;
+  display: none;
+}
+.content-container .text-content button:hover img{
+  display: inline-block;
+}
+.skills{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+.skills img,h5{
+  width: 100px;
+  height: 15vh;
+  color: black;
+  transition: 0.3s ease-in-out;
+  font-size: large;
+}
+.skills .Js ,.html, .css, .React ,.Git,.java{
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.my-skills h1{
+  border: 1px solid;
+  text-align: center;
+  background-color: white;
+}
+.my-skills{
+  margin: 50px;
+}
+.skills img:hover{
+  transform: scale(1.2
+  );
+  cursor: pointer;
+}
+.my-projects h1{
+  align-items: center;
+  border: 1px solid;
+  text-align: center;
+margin: 50px;
+background-color: white;
+
+}
+.text-content ul li img{
+  width: 30px;
+  margin: 6px;
+  transition: transform 0.2s ease-in-out;
+  animation-name: socialmedia ;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-play-state: running;
+  animation-direction: normal;
+}
+.text-content ul li{
+  list-style: none; 
+}
+.text-content ul li img:hover{
+  
+  cursor: pointer;
+ transform: scale(1.34);
+
+}
+body{
+  overflow-x: hidden;
+}
+@keyframes socialmedia{
+  from{
+    transform: translateY(-2000%);
+  }
+}
+.slider-projects{
+  justify-content: center;
+  align-items: center;
+display: flex;
+}
+.slider-projects .projects{
+    display: flex;
+  position: relative;
+width: 50%;
+}
+.slider-projects .projects img{
+  width: 100%;
+  display: flex;
+}
+@media only screen and (max-width:790px){
+.menu-icon img{
+  display: block;
+  width: 50px;
+ 
+}
+.my-skills .skills{
+display: inline
+}
+ul li a{
+  text-decoration: none;
+  transition: font-size 0.2s ease-in-out;
+}
+ul li a:hover{
+ font-size: large;
+}
+.menu-icon .llist{
+  display: inline-block;
+  position: absolute;
+  border: 1px solid;
+  margin-left: -100px;
+  list-style: none;
+  text-decoration: none;
+  height: 50vh;
+  
+  width: 200px;
+  background-color:rgb(214, 233, 227);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.menu-icon .llist{
+  right: -100%;
+  
+}
+.menu-icon .llist li{
+  margin: 20px 0;
+  text-decoration: none;
+}
+.images img{
+  height: 200px;
+  width: 100%;
+  transition: 0.15s ease;
+  border-radius: 40px;
+}
+.dots label{
+  border: 1px solid;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  border-radius: 30%;
+margin: 5px;
+color: black;
+background-color: white;  
+}
+.menu-icon .llist li button{
+  border: none;
+  width: 169px;
+  height: 5vh;
+  background-color: skyblue;
+  border-radius: 30px;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-icon .llist li button:hover #dd {
+  position: relative;
+  bottom: 9px;
+}
+
+.text-content .myUl{
+  position: relative;
+  left: -15px;
+}
+
+.menu-icon .llist li button:hover {
+  border-radius: 30px;
+  background-color: blueviolet;
+  cursor: pointer;
+  width: 170px;
+}
+
+.menu-icon .llist li a:hover{
+transform: scale(1.2);
+}
+
+.menu-icon .llist li button img{
+
+  width: 23px;
+    display: none;
+      margin-top: 4px;
+    align-items: center;
+    margin-left: 22px;
+}
+.menu-icon .llist li button:hover img{
+  display: inline-block;
+}
+.navBar .list{
+  display: none;
+  
+}
+.skills {
+justify-content: space-around;
+display: block;
+
+text-align: center; 
+}
+.skills div{
+  margin: 20px 0px;
+}
+.skills h5{
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-top: -30px;
+}
+.skills img{
+margin:-30px}
+.menu-icon{
+
+  margin-left: 120px;
+}
+.content-container{
+  margin: 100px -1px;
+}
+.myImg img{
+  border-radius: 300px;
+  height: 10px;
+}
+.download button{
+  display: none;
+}
+}
