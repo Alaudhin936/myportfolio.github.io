@@ -31,7 +31,7 @@ position: relative;
 }
 
 body {
-  background-image: url(./blu.jpg);
+  background-image: url(./blue-toned-set-triangular-paper-sheets-with-copy-space.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: purple;
@@ -314,10 +314,8 @@ width: 50%;
 .menu-icon img{
   display: block;
   width: 50px;
- }
-  body{
-    overflow-x:hidden;
-  }
+ 
+}
 .my-skills .skills{
 display: inline
 }
@@ -344,7 +342,7 @@ ul li a:hover{
   text-align: center;
 }
 .menu-icon .llist{
- display:none;
+display: none;
   
 }
 .menu-icon .llist li{
@@ -413,7 +411,6 @@ transform: scale(1.2);
 }
 .navBar .list{
   display: none;
-  
 }
 .skills {
 justify-content: space-around;
