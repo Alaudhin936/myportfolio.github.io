@@ -314,8 +314,10 @@ width: 50%;
 .menu-icon img{
   display: block;
   width: 50px;
- 
-}
+ }
+  body{
+    overflow-x:hidden;
+  }
 .my-skills .skills{
 display: inline
 }
