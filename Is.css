@@ -344,7 +344,7 @@ ul li a:hover{
   text-align: center;
 }
 .menu-icon .llist{
-  right: -100%;
+ display:none;
   
 }
 .menu-icon .llist li{
